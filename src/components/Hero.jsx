@@ -1,10 +1,9 @@
 import React from "react";
-import Banner from "../assets/undraw_real_time_sync_re_nky7.svg";
-import plant from "../assets/plant1.jpg"
+import main from "../assets/main.jpg"
 const Hero = () => {
   return (
-    <main className="bg-gradient-to-r from-green-200 to-green-500 pt-20 dark:bg-green-400">
-      <section className="container flex h-[650px] flex-col items-center justify-center md:h-[500px] ">
+    <main className="bg-gradient-to-r from-green-200 to-green-500 pt-20">
+      <section  className="container flex h-[650px] flex-col items-center justify-center md:h-[500px] ">
         <div className="grid grid-cols-1 items-center gap-8 dark:text-white md:grid-cols-2">
           <div
             data-aos="fade-right"
@@ -31,9 +30,12 @@ const Hero = () => {
             data-aos="fade-left"
             data-aos-duration="400"
             data-aos-once="true"
-            className="mx-auto max-w-xs p-4"
+            className="mx-auto max-w-50 p-4"
           >
-            <img src={plant} alt="No image" className="" />
+            <div className="p-6 md:p-10">
+             <img src={main} alt="No image" className="w-[100%] h-auto md:w-[90%]" />
+            </div>
+
           </div>
         </div>
       </section>

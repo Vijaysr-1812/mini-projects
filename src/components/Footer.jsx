@@ -15,8 +15,8 @@ const Footer = () => {
           <div className=" px-4 py-8 ">
             <h1 className="mb-3 text-justify text-xl font-bold sm:text-left sm:text-3xl">
               <a href="/#home" className="">
-                COZ
-                <span className="inline-block font-bold text-primary">WEB</span>
+                NAT
+                <span className="inline-block font-bold text-primary">URE</span>
               </a>
             </h1>
             <p className="">
@@ -26,7 +26,7 @@ const Footer = () => {
             <br />
             <div className="flex items-center gap-3">
               <FaLocationArrow />
-              <p>Noida, Uttar Pradesh</p>
+              <p>Bengaluru,Karnataka</p>
             </div>
             <div className="mt-3 flex items-center gap-3">
               <FaMobileAlt />

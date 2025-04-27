@@ -2,8 +2,8 @@ import React from "react";
 
 const BannerDetails = ({ reverse, img }) => {
   return (
-    <section>
-      <main className="bg-green-200 dark:bg-slate-900 dark:text-white">
+    <section id="about">
+      <main className="bg-gradient-to-r from-green-200 to-green-500  text-white">
         <section className="container flex flex-col items-center justify-center py-10 md:h-[500px] ">
           <div className="grid grid-cols-1 items-center gap-4  md:grid-cols-2">
             <div
@@ -14,28 +14,28 @@ const BannerDetails = ({ reverse, img }) => {
                 reverse ? "md:order-last" : ""
               } `}
             >
-              <h1 className="text-2xl md:text-4xl ">
+              <h1 className="text-3xl md:text-4xl ">
                  SAVE THE NATURE
               </h1>
-              <p className="text-sm text-slate-600 dark:text-slate-400">
+              <p className="text-sm text-white font-large">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
                 ducimus eius quis ad enim aliquid iusto eum nihil exercitationem
                 necessitatibus?
               </p>
               <div>
                 <ul className="flex list-inside list-disc flex-col gap-2  md:gap-4">
-                  <li className="font-medium">
+                  <li className=" font-large font-semibold">
                     Lorem ipsum adipisicing elit. Cum, vel.
                   </li>
-                  <li className="font-medium">
+                  <li className="font-large font-semibold">
                     dlss ipsum adipisicing elit. Cum, vel.
                   </li>
-                  <li className="font-medium">adipisicing elit. Cum, vel.</li>
+                  <li className="font-large font-semibold">adipisicing elit. Cum, vel.</li>
                 </ul>
               </div>
               <div className="space-x-4">
                 <button className="rounded-md border-2 border-primary bg-primary px-4 py-2 text-sm text-white transition-colors duration-300 hover:bg-primary/80">
-                  Get Started
+                  <a href="#about">Get Started</a>
                 </button>
               </div>
             </div>
@@ -43,13 +43,14 @@ const BannerDetails = ({ reverse, img }) => {
               data-aos="fade-left"
               data-aos-duration="400"
               data-aos-once="true"
-              className={reverse ? "order-1" : ""}
-            >
-              <img
-                src={img}
-                alt="No image"
-                className="max-auto w-full hover:drop-shadow-md"
-              />
+              className={reverse ? "order-1  p-30 md:p-16" : "p-30 md:p-8" }
+            ><div className="p-30 md:p-10">
+             <img
+            src={img}
+             alt="No image"
+             className="w-[100%] h-[50%] hover:drop-shadow-md"
+            />
+           </div>
             </div>
           </div>
         </section>

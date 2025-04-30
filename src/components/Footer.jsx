@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="rounded-t-3xl bg-gradient-to-r from-green-200 to-green-500">
+    <div className="rounded-t-3xl bg-gradient-to-r from-green-700 to-green-700">
       <section className="mx-auto max-w-[1200px] text-white">
         <div className=" grid py-5 md:grid-cols-3">
           <div className=" px-4 py-8 ">

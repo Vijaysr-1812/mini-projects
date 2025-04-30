@@ -9,11 +9,13 @@ import Banner from "./components/Banner";
 import Blogs from "./components/Blog";
 import Footer from "./components/Footer";
 import BannerDetails from "./components/BannerDetails";
-import Services from "./components/Service"; // ✅ Import Services.jsx
+import Service from "./components/Service";
 import Banner1 from "./assets/image3.jpg";
 import Banner2 from "./assets/image4.jpg";
+import Services from "./components/Services";
+import GreenToken from "./components/GreenToken";
 
-import CarbonFootprintCalculator from "./AI_Integration/pages"; // ✅ Import AI Integration page
+import CarbonFootprintCalculator from "./AI_Integration/pages";
 
 function Home() {
   return (
@@ -49,7 +51,9 @@ function App() {
         <div className="pt-24">
           <Routes>
             <Route path="/" element={<Home />} /> {/* Home page */}
-            <Route path="/services" element={<CarbonFootprintCalculator />} /> {/* Services → AI Page */}
+            <Route path="/services" element={<CarbonFootprintCalculator />} />
+            <Route path="/service" element={<Services />} /> {/* Service page */}
+            <Route path="/greentoken" element={<GreenToken />}/> {/* Green Token page */}
           </Routes>
         </div>
       </div>

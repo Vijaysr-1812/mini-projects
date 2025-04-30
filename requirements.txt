@@ -1,0 +1,5 @@
+npm install
+npm install tailwindcss postcss autoprefixer
+in css file:@import "tailwindcss";
+npm install lucide-react
+to run:npm run dev

@@ -3,7 +3,7 @@ import React from "react";
 const BannerDetails = ({ reverse, img }) => {
   return (
     <section id="about">
-      <main className="bg-gradient-to-r from-green-200 to-green-500  text-white">
+      <main className="bg-gradient-to-r from-green-700 to-green-300  text-white">
         <section className="container flex flex-col items-center justify-center py-10 md:h-[500px] ">
           <div className="grid grid-cols-1 items-center gap-4  md:grid-cols-2">
             <div

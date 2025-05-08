@@ -30,7 +30,7 @@ const Footer = () => {
             </div>
             <div className="mt-3 flex items-center gap-3">
               <FaMobileAlt />
-              <p>+91 123456789</p>
+              <p>+91 7892816703</p>
             </div>
             {/* Social Handle */}
           </div>
@@ -87,7 +87,7 @@ const Footer = () => {
                     placeholder="Email"
                   />
                   <div className="mt-6 flex items-center gap-3">
-                    <a href="" className="duration-200 hover:scale-105">
+                    <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.instagram.com%2Fv__illusionnforge%3Figsh%3DNmd1ZHRhYjNlNHQy&e=AT2nlw40Nzs9z3qQ9C6eq6yne9jpWnx98ori_V55C6vNgsMIOXMDo8pGVPBxfxGy0C0HhrmCYwrPAP1RyDD1qwJPXe9rWvvv" className="duration-200 hover:scale-105">
                       <FaInstagram className="text-3xl" />
                     </a>
                     <a href="#" className="duration-200 hover:scale-105">
@@ -104,7 +104,7 @@ const Footer = () => {
         </div>
         <div>
           <div className="border-t-2 border-gray-300/50 py-6 text-center">
-            @copyright 2024 Travery || NATURE
+            @ NATURE BY DZEEPAK
           </div>
         </div>
       </section>

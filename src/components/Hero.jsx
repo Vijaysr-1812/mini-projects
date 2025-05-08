@@ -1,7 +1,12 @@
 import React from "react";
 import main from "../assets/main.jpg"
-
+import { useNavigate } from "react-router-dom";
 const Hero = () => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/signup"); // Navigate to the signup page
+  }
+
   return (
     <main className="bg-gradient-to-r from-green-700 to-green-300 ">
       <section  className="container flex h-[650px] flex-col items-center justify-center md:h-[500px] ">
@@ -17,12 +22,12 @@ const Hero = () => {
               We ARE TRYING TO SAVE THE NATURE
             </h1>
             <p className="space-x-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-              ducimus eius quis ad enim aliquid iusto eum nihil exercitationem
-              necessitatibus?
+            "Nature’s beauty is a gift we must cherish,
+            Protect it now or watch it perish."
             </p>
             <div className="space-x-4">
-              <button className="rounded-md border-2 border-green-800 bg-green-500  px-4 py-2 text-sm text-white transition-colors duration-300 hover:bg-white   hover:text-black">
+              <button className="rounded-md border-2 border-green-800 bg-green-500  px-4 py-2 text-sm text-white transition-colors duration-300 hover:bg-green-600   hover:text-black"
+              onClick = {handleClick}>
                 Get Started
               </button>
              

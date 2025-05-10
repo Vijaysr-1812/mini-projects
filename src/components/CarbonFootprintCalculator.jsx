@@ -51,12 +51,19 @@ const CarbonFootprintCalculator = () => {
 
       const data = await response.json();
       if (!response.ok) throw new Error(data.error || "Prediction failed");
+      await fetch("http://localhost:8080/prediction/store", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...formData, footprint: data.footprint }),
+      });
       setPrediction(data.footprint); 
     } catch (error) {
       console.error("Error calculating footprint:", error);
       setPrediction("Error calculating footprint");
     }
   };
+
+   
 
   const handleSubmit = (e) => {
     e.preventDefault();
